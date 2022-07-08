@@ -1,0 +1,31 @@
+﻿@model List<solucionEmpresaABC.Models.Area>
+
+<h1>Areas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                ID de Area
+             </th>
+             <th>
+                 Area
+             </th>
+             <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var area in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m=>area.IdArea)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>area.Area1)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

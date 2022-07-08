@@ -1,0 +1,31 @@
+﻿@model List<solucionEmpresaABC.Models.Subarea>
+
+<h1>Subáreas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                ID de Subárea
+             </th>
+             <th>
+                 Subárea
+             </th>
+             <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var subarea in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m=>subarea.IdSubarea)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>subarea.SubArea1)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
